@@ -6,9 +6,9 @@ import Testmonials from "./Testmonials";
 const MainPage = () => {
   return (
     <>
-      <Navbar/>
-      <Testmonials/>
-      <Footer/>
+      <Navbar />
+      <Testmonials />
+      <Footer />
     </>
   );
 };
