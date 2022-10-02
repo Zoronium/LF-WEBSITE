@@ -1,25 +1,62 @@
 import React from "react";
-import "./Footer.css"
+import styled from "styled-components";
 
 const Footer = () => {
+  const FooterWrapper = styled.div`
+    height: 100px;
+    background: #175CE6
+;
+    height: 200px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    color: white;
+  `;
+
+  const LinksFooter = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  `;
+  const Sublink = styled.a`
+    
+    cursor: pointer;
+  `;
+
+  const MediaFooter = styled.div`
+  border: 5px;
+  border-color: black;
+  display: grid;
+  `;
+  const LinksHeader = styled.h3`
+    cursor: pointer;
+  `;
 
   return (
     <div>
-      <div className="FooterWrapper">
-        <dic className="MediaFooter">
+      <FooterWrapper>
+        <MediaFooter>
           <p>txt</p>
           <p>txt</p>
           <p>txt</p>
-        </dic>
-        <div className="LinksFooter">
-          <h3 className="LinksHeader">link</h3>
-          <a className="Sublink">link 1</a>
-        </div>
-        <div className="LinksFooter">
-          <h3 className="LinksHeader">link</h3>
-          <a className="Sublink">link 1</a>
-        </div>
-      </div>
+        </MediaFooter>
+        <LinksFooter>
+          <LinksHeader>link</LinksHeader>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+        </LinksFooter>
+        <LinksFooter>
+          <LinksHeader>link</LinksHeader>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+          <Sublink>link 1</Sublink>
+        </LinksFooter>
+      </FooterWrapper>
     </div>
   );
 };
